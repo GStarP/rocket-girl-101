@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Pre from '../src/views/pre.vue'
+import PreCheck from '../src/views/pre-check.vue'
 
 import Home from '../src/views/home.vue'
 import HomeIndex from '../src/components/home/index.vue'
@@ -20,7 +20,7 @@ export default new Router({
     },
     {
       path: '/',
-      component: Pre
+      component: PreCheck
     },
     {
       path: '/home',
