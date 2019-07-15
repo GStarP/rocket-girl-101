@@ -1,20 +1,21 @@
 <template>
   <div id="pre-check" class="all-center">
     <input-check></input-check>
+    <div id="whosyourdaddy" @click="toHome">>>>Continue</div>
     <ul>
       <li>
         <a>
-          <i class="fa fa-twitter fa-2x"></i>
+          <i class="fa fa-steam fa-2x"></i>
         </a>
       </li>
       <li>
         <a>
-          <i class="fa fa-google-plus fa-2x"></i>
+          <i class="fa fa-github fa-2x"></i>
         </a>
       </li>
       <li>
         <a>
-          <i class="fa fa-facebook fa-2x"></i>
+          <i class="fa fa-qq fa-2x"></i>
         </a>
       </li>
       <li>
@@ -33,6 +34,11 @@ export default {
   name: 'pre-check',
   components: {
     'input-check': PreInputCheck
+  },
+  methods: {
+    toHome () {
+      this.$router.push({ path: '/home' })
+    }
   }
 }
 </script>
@@ -44,6 +50,16 @@ export default {
     background-image: url('../../static/images/pre-check-bg.png');
     background-size: 100% 100%;
   }
+  #whosyourdaddy {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   #pre-input-check {
     width: 320px;
     height: 220px;
@@ -52,6 +68,7 @@ export default {
     position: absolute;
     left: 0%;
     top: 0%;
+    margin-left: -20px;
     display: flex;
     flex-direction: row;
     li {
