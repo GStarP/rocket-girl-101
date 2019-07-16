@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <navigator v-bind:naviList="naviList"></navigator>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 

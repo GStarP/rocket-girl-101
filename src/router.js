@@ -6,6 +6,7 @@ import PreCheck from '../src/views/pre-check.vue'
 import Home from '../src/views/home.vue'
 import HomeIndex from '../src/components/home/index.vue'
 import HomeInfo from '../src/components/home/info.vue'
+import HomeDetail from '../src/components/home/info/detail.vue'
 import HomeVideos from '../src/components/home/videos.vue'
 
 Vue.use(Router)
@@ -33,6 +34,10 @@ export default new Router({
         {
           path: 'info',
           component: HomeInfo
+        },
+        {
+          path: 'detail/:id',
+          component: HomeDetail
         },
         {
           path: 'videos',
