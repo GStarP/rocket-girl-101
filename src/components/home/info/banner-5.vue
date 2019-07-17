@@ -161,18 +161,19 @@ export default {
 </script>
 
 <style lang="scss">
-$imgW: 380px;
-$imgH: 380px;
+$imgW: 420px;
+$imgH: 420px;
 .banner-5 {
   width: 100%;
   height: $imgH;
+  $vertical-bias: 20px;
   .banner-img-list {
     width: 3 * $imgW;
     height: $imgH;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -($imgH / 2);
+    margin-top: -($imgH / 2 + $vertical-bias);
     margin-left: -(3 * $imgW / 2);
     >div {
       width: $imgW;
@@ -222,7 +223,7 @@ $imgH: 380px;
   .banner-5-btn {
     position: absolute;
     top: 50%;
-    margin-top: - ($btnH / 2);
+    margin-top: - ($btnH / 2 + $vertical-bias);
     width: $btnW;
     height: $btnH;
     background-color: black;

@@ -29,7 +29,7 @@ export default {
 }
 .feature-card {
   width: 24.5%;
-  background-color: #eaebef;
+  background-color: #EAEBEF;
 
   &:hover {
     animation-name: gra-to-4AB3FE;
@@ -59,7 +59,7 @@ export default {
     > div {
       width: 70%;
       height: 30%;
-      color: #7a7a7a;
+      color: #7A7A7A;
       font-weight: bold;
       text-align: center;
     }

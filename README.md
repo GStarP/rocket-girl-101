@@ -13,7 +13,8 @@
 - vue2
 - vue-router
 - webpack
-- SASS
+- SCSS
+- ES6
 
 ## 模拟后端
 

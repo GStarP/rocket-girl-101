@@ -22,17 +22,11 @@ export default {
     }
   },
   methods: {
-    /**
-     * 从模拟数据库中随机抽取一个问题
-     */
     getQuestions () {
       let questions = questionDB.questions
       let rd = Math.floor(Math.random() * questions.length)
       this.question = questions[rd]
     },
-    /**
-     * 检验回答并做相应跳转
-     */
     checkAnswer () {
       if (this.inp === this.question.answer) {
         this.$router.push({ path: '/home' })

@@ -1,6 +1,7 @@
 <template>
   <div id="home-info">
     <home-info-banner></home-info-banner>
+    <img src="../../../static/images/logo.png"/>
   </div>
 </template>
 
@@ -21,5 +22,15 @@ export default {
     height: 100%;
     background-image: url('../../../static/images/home-info-bg.jpg');
     background-size: cover;
+    > img {
+      $logoW: 250px;
+      $logoH: 160px;
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      margin-left: - ($logoW / 2);
+      width: $logoW;
+      height: $logoH;
+    }
   }
 </style>

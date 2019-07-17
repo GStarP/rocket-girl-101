@@ -19,7 +19,7 @@ export default {
 <style lang="scss">
   @keyframes gra-to-pink {
     100% {
-      color: pink;
+      color: #FF6666;
     }
   }
   .top-navigator {
@@ -27,6 +27,7 @@ export default {
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 5;
     .navi-item {
       text-decoration: none;
       color: white;
@@ -41,7 +42,7 @@ export default {
       }
     }
     .router-link-exact-active {
-      color: pink;
+      color: #FF6666;
     }
   }
 </style>
