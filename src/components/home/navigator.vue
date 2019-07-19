@@ -36,7 +36,7 @@ export default {
       margin: 20px 40px;
       &:hover {
         animation-name: gra-to-pink;
-        animation-duration: 0.5s;
+        animation-duration: 0.4s;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
       }
