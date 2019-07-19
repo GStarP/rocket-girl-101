@@ -7,7 +7,7 @@
       <div class="origin-txsp all-center" @click="getTXSPVideos">
         <img src="../../../static/images/txsp-logo.png"/>
       </div>
-      <div class="origin-youku all-center">
+      <div class="origin-youku all-center" @click="getYoukuVideos">
         <img src="../../../static/images/youku-logo.png"/>
       </div>
     </div>
@@ -76,6 +76,9 @@ export default {
       this.pageNum = 0
       this.videoList = this.randomList(TXSPVideos.videos)
       this.swiftPage(1)
+    },
+    getYoukuVideos () {
+      alert('去优酷看极限挑战去了！没时间做了！')
     },
     /**
      * @description 返回传入数组的随机重排(模拟实现刷新功能)
